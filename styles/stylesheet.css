@@ -2,11 +2,16 @@
 
 body {
   background: #66ffff;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', 'Gentium' sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
   color: #666;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column; 
 }
 
 .clear {
