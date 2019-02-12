@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.banner-item {
+  background: white;
+  width: 60%;
+  font-size: 5rem
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: lightblue;
+}
+
+.navbar a {
+  float: left;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: lightblue;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: white;
+  color: lightblue;
+}
+
+.subnav-content {
+  display: none;
+  left: 0;
+  position: absolute;
+  background-color: lightblue;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: white;
+  color: lightblue;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+.welcome-page {
+  position: relative;
+  text-align: left;
+  color: white;
+}
+
+.left-side {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+}
+
+.left-side p {
+  font-size: 3rem;
+  margin-right: 80%;
+  color: white;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  background-image: url(../images/wormhole-transparent.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  background-size: 100%;
+}
+
+footer {
+  text-align: center;
+}

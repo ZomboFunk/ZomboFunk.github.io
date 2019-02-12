@@ -3,26 +3,36 @@
   <head>
     <meta charset="utf-8">
     <title>Powershell Scripts</title>
-    <link rel="stylesheet" type= "text/css" href="styles/stylesheet.css">
+    <link rel="stylesheet" type= "text/css" href="styles/index.css">
   </head>
   <body>
     <header>
       <nav>
-        <ul class="navigation">
-          <li><a href="index.html" title="Home">Home</a></li>
-          <li><a href="about-me.html" title="About Me">About Me</a></li>
-          <li><a href="" title="Portfolio">Portfolio</a>
-            <ul>
-              <li><a href="https://github.com/ZomboFunk/semantic-elements" title="Project 1">Semantic Elements</a></li>
-              <li><a href="https://github.com/ZomboFunk/portfolio" title="Project 2"> Class Portfolio</a></li>
-            </ul>
-          </li>
-          <li><a href="powershell-scripts.html" title="PowerShell Scripts">PowerShell Scripts</a></li>
-          <div class="clear"></div>
-        </ul>
+        <div class="banner">
+          <div>
+            <img class= "banner-item" src="images/portal-icon.png" alt="image of a whirlpool that looks like a portal">
+          </div>
+          <div>
+            <h1 class= "banner-item">https://portal.army</h1>
+          </div>
+        </div>
+        <div class="navbar">
+          <a href="index.html">Portal</a>
+          <div class="subnav">
+          <button class="subnavbtn">Projects</button>
+          <div class="subnav-content">
+            <a href="projects.html">Projects Page</a>
+            <a href="cats/cats.html">Cat Rentals</a>
+            <a href="https://github.com/ZomboFunk/semantic-elements" title="Project 1">Semantic Elements</a>
+            <a href="https://github.com/ZomboFunk/portfolio" title="Project 2"> Class Portfolio (GitHub)</a>
+          </div>
+        </div>
+          <a href="powershell-scripts.html">PowerShell Scripts</a>
+          <a href="about-me.html">About</a>
       </nav>
     </header>
-
+<div class="page-content">
+  <div>
   <h1>PowerShell script to find a phrase in Word Documents.</h1>
   <p> A lot of organizations nowadays automate the OPORD process to some extent, often at least by using workflows to identify sections/or units assigned in each order and notify you only when you're been designated as "assigned". Unfortunately, some do not automate the process at all. In those, you have to read through everyorder and find out if it's even applicable. A lot of us know the feeling of skipping immediately down to the "Tasks to Subordinate Units:" Section before reading anything at all. Today I found myself in that situation for a large number of orders and I thought, "Not today. There has got to be a way to automate this process!"
   And I'm sure there are a lot. I like PowerShell so I wanted to use that. Unfortunately the "select-string" function doesn't work on .doc or .docx file types, so I wasted a few hours reading script that are way to complicated for me before I just decided to convert everything to .txt, which is pretty simple. After that it was just a matter of looking through the files for an appropriate string. Unfortunately there's no standardaization in unit spelling (302d vs 302nd vs 302). Turns out you can set select-string to display a given number of lines before and after a phrase. Knowing that it's just a matter of searching "Tasks to Staff:". The script then shows what each order says, and you only need to read through a few lines to determine which orders are worth investigating.
@@ -52,15 +62,9 @@
 <br>$txttofind = Read-Host "Text to find?"
 <br>Get-ChildItem -recurse -filter *.txt -path $docPath | Select-String -pattern -context 0,1 $txttofind | format-table
 </code>
-
-  <article class="">
-  <h2>I'm working on this page as part of an attempt to learn Web-Development.</h2>
-  <p>If you have an interest in Web Development I strongly recommend checking out some of these resources!</p>
-  <ul>
-    <li><a href="https://w3cx.org/">W3CX.org</a></li>
-    <li><a href="https://www.pce.uw.edu/Overview/Prog/6390">UW Front End Web Development</a></li>
-  </ul>
-  </article>
+<p>That's it. if you have any problems with it or have any ideas on how to impore on the idea please send me a message at the link below.</p>
+</div>
+</div>
 
     <footer>This page is under development as an ongoing effort to learn web development concepts. If you have questions about the content displayed here please contact me via <a href="mailto:cjtuck@uw.edu"> e-mail</a>
       <p>

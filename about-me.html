@@ -3,37 +3,48 @@
   <head>
     <meta charset="utf-8">
     <title>About Me</title>
-    <link rel="stylesheet" type= "text/css" href="styles/stylesheet.css">
+    <link rel="stylesheet" type= "text/css" href="styles/index.css">
   </head>
   <body>
     <header>
-    <nav>
-      <ul class="navigation">
-        <li><a href="index.html" title="Home">Home</a></li>
-        <li><a href="about-me.html" title="About Me">About Me</a></li>
-        <li><a href="" title="Portfolio">Portfolio</a>
-          <ul>
-            <li><a href="https://github.com/ZomboFunk/semantic-elements" title="Project 1">Semantic Elements</a></li>
-            <li><a href="https://github.com/ZomboFunk/portfolio" title="Project 2"> Class Portfolio</a></li>
-          </ul>
-        </li>
-        <li><a href="powershell-scripts.html" title="PowerShell Scripts">PowerShell Scripts</a></li> 
-        <div class="clear"></div>
-      </ul>
-    </nav>
+      <nav>
+        <div class="banner">
+          <div>
+            <img class= "banner-item" src="images/portal-icon.png" alt="image of a whirlpool that looks like a portal">
+          </div>
+          <div>
+            <h1 class= "banner-item">https://portal.army</h1>
+          </div>
+        </div>
+        <div class="navbar">
+          <a href="index.html">Portal</a>
+          <div class="subnav">
+          <button class="subnavbtn">Projects</button>
+          <div class="subnav-content">
+            <a href="projects.html">Projects Page</a>
+            <a href="cats/cats.html">Cat Rentals</a>
+            <a href="https://github.com/ZomboFunk/semantic-elements" title="Project 1">Semantic Elements</a>
+            <a href="https://github.com/ZomboFunk/portfolio" title="Project 2"> Class Portfolio (GitHub)</a>
+          </div>
+        </div>
+          <a href="powershell-scripts.html">PowerShell Scripts</a>
+          <a href="about-me.html">About</a>
+      </nav>
     </header>
-
+<div class="page-content">
+  <div>
   <h1>This is the about me page.</h1>
   <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-
-  <article class="">
+  </div>
+  <div>
   <h2>I'm working on this page as part of an attempt to learn Web-Development.</h2>
   <p>If you have an interest in Web Development I strongly recommend checking out some of these resources!</p>
   <ul>
     <li><a href="https://w3cx.org/">W3CX.org</a></li>
     <li><a href="https://www.pce.uw.edu/Overview/Prog/6390">UW Front End Web Development</a></li>
   </ul>
-  </article>
+  </div>
+</div>
 
     <footer>This page is under development as an ongoing effort to learn web development concepts. If you have questions about the content displayed here please contact me via <a href="mailto:cjtuck@uw.edu"> e-mail</a>
 
