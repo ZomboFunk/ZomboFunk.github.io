@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Gentium+Basic" rel="stylesheet">
+  <link rel="stylesheet" type= "text/css" href="styles/index.css">
+  <title>portal.army</title>
+  <style media="screen">
+    body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="banner">
+      <div>
+        <img class= "banner-item" src="images/portal-icon.png" alt="image of a whirlpool that looks like a portal">
+      </div>
+      <div>
+        <h1 class= "banner-item">https://portal.army</h1>
+      </div>
+    </div>
+    <div class="navbar">
+      <a href="index.html">Portal</a>
+      <div class="subnav">
+      <button class="subnavbtn">Projects</button>
+      <div class="subnav-content">
+        <a href="projects.html">Projects Page</a>
+        <a href="cats/cats.html">Cat Rentals</a>
+        <a href="https://zombofunk.github.io/archery-site/index.html">Archery Mock-Up</a>
+        <a href="https://github.com/ZomboFunk/semantic-elements" title="Project 1">Semantic Elements</a>
+        <a href="https://github.com/ZomboFunk/portfolio" title="Project 2"> Class Portfolio (GitHub)</a>
+      </div>
+    </div>
+      <a href="powershell-scripts.html">PowerShell Scripts</a>
+      <a href="about-me.html">About</a>
+  </nav>
+    <div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="issue">Issue</label>
+    <select id="issue" name="issue">
+      <option value="website">website</option>
+      <option value="content">content</option>
+      <option value="other">other</option>
+    </select>
+
+    <label for="details">Subject</label>
+    <textarea id="details" name="details" placeholder="Please describe your issue" style="height:200px"></textarea>
+
+    <label for="response">Method of Response?</label>
+    <select id="response" name="response">
+      <option value="e-mail">e-mail</option>
+      <option value="phone">phone</option>
+    </select>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+  </body>
+</html>
